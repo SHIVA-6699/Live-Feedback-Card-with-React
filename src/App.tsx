@@ -14,6 +14,7 @@ function App() {
 
   const handleDataChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, index: number) => {
     const { name, value } = e.target;
+    
     setNewTodo(prevState => ({ ...prevState, [name]: value }));
   };
 
@@ -35,7 +36,7 @@ function App() {
 
   const handleEdit = (id: number) => {
     setEditingId(id);
-    const todoToEdit = data.find(todo => todo.id === id);
+    const todoToEdit = data.find(todo =>todo.id === id);
     if (todoToEdit) {
       setNewTodo(todoToEdit);
     }

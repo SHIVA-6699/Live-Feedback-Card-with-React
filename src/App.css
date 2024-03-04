@@ -1,20 +1,28 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-.p{
-  font-family: sans-serif;
-  width: 30rem;
-  gap:2rem;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid blue;
-  padding: 2rem;
-  border-radius: .4rem;
-  position: relative;
-  inset: 0;
-  margin-left: auto;
-  margin-right: auto;
+button {
+  border: none;
+  background: transparent;
+  outline: none;
 }
-button{
-  font-family: sans-serif;
-  background-color: blue;
-  color: white;
+span {
+  font-size: 2rem;
+  margin:.5rem;
+}
+.on {
+  color: goldenrod;
+}
+.off {
+  color: #b7afaf;
+}
+
+.star{
+  display: flex;
+  flex-wrap: wrap;
+}
+.con{
+  position:relative;
+  inset: 0;
+  margin: auto;
+
+
 }
